@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Sample1.Domain1.Storage\**" />
+    <EmbeddedResource Remove="Sample1.Domain1.Storage\**" />
+    <None Remove="Sample1.Domain1.Storage\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Sample1.Common.Storage\Sample1.Common.Storage.csproj" />
+  </ItemGroup>
+
+</Project>
