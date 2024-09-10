@@ -21,7 +21,7 @@ namespace Sample1.Administration.Infra.Db
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer("Server=.;Database=Administration;Trusted_Connection=True;Encrypt=False");
+            optionsBuilder.UseSqlServer("Server=.;Database=Domain2;Trusted_Connection=True;Encrypt=False");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
